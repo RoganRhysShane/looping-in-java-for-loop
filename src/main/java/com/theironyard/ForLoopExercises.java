@@ -19,11 +19,21 @@ public class ForLoopExercises {
      * 8, 9, 10. Or, from = 12, to = -3, and step = 3, means the method will add
      * up 12, 9, 6, 3, 0, -3. The sum is returned.
      */
-    public static int addRange(int from, int to, int step){
+    public static int addRange(int from, int to, int step) {
         // todo: implement this method using a for loop
-        return 0;
-    }
 
+
+        int sum = 0;
+
+        for (int x = from; x <= to; x = x + step) {
+
+            sum += x;
+
+
+        }
+
+            return sum;
+    }
     /**
      * This method returns the specified string a given number of times. The str
      * argument is the string to repeat. The times argument is the number of
@@ -32,7 +42,14 @@ public class ForLoopExercises {
      */
     public static String repeatString(String str, int times){
         // todo: implement this method
-        return null;
+
+        String newWord = "";
+      for (int i = 1; i <= times; i ++){
+
+        newWord += str;
+      }
+
+        return newWord;
     }
 
 }
